@@ -5,6 +5,10 @@ body{
 .hide{
     display: none;
 }
+.title{
+    text-align: center;
+    
+}
 /*NavBar Section*/
 nav{
     grid-template-columns:0.5fr 1fr  0.5fr;
@@ -52,7 +56,28 @@ nav a{
     border-radius: 50px;
 }
 
+/*Next Level*/
+.next_page{
+    justify-content: end;
+    align-items: end;
+    display: flex;
+}
+.next_level{
+    border: none;
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+    height: 35px;
+    width: 100px;
+}
+
+
+
 /*First Level Page*/
+/*First Level Output*/
+.first_level_page_goal{
+    padding: 30px;
+}
 .first_level_container .yellow{
     height: 200px;
     width: 200px;
@@ -68,4 +93,13 @@ nav a{
     justify-content: center;
     align-items: center;
     display: flex;
+}
+
+
+
+/*First Level  ASsnwer*/
+
+.first_level_page_answer{
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
 }

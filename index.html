@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dionell Coded
-    </title>
+    <title>Manahan Arcade</title>
     <script src="https://kit.fontawesome.com/f710e7073a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -27,27 +26,86 @@
             <a class="register" href="">Register</a>
         </div>
     </nav>
-    <!--Start Page-->
+
     <section class="start_page ">
         <div class="start_container">
             <h1>Manahan Arcade</h1>
             <h3>This game is to Sharpen your coding Skills</h3>
-            <p>By giving challenging questions and helping developers sharpen there knowledge about coding, this game helps in developing the understanding of a developer </p>
-            <a href="">
+            <p>By giving challenging questions and helping developers sharpen there knowledge about coding, this game helps in developing the understanding of a developers. </p>
                 <button class="start"> Start Now </button>
-            </a>
+
               
         </div>
     </section>
     <!--First Level Page-->
-    <section id="first_level_page ">
-        <h1>Flex Practice</h1>
+    <!--First Level Goal-->
+    <div class="first_level_page_goal hide">
+    <section class="first_level_page">
+        <h1 class="title">Flex Practice</h1>
+        <h2>GOAL:</h2>
         <div class="first_level_container">
             <div class="yellow">YELLOW</div>
             <div class="green">GREEN</div>
         </div>
+        <div>
+            <h2>Instructions</h2>
+           <p>1. Set The Collor and Size</p>
+            <p>2. Make The Boxes Center</p>
+        </div>
     </section>
+    <hr>
+    <!--First Level Output-->
+    <section class="first_level_page_output">
+        <h1>Output:</h1>
+        <div class="first_level_container_answer">
+            <div class="yellow_answer">YELLOW</div>
+            <div class="green_answer">GREEN</div>
+        </div>
+        <div class="next_page">
+            <button class="next_level"><b>Next Level</b></button>
+        </div>
+        <hr>
+        <!--First Level  ASsnwer-->
+        <div class="first_level_page_answer">
+            <div class="yellow_box">
+                <ol >
+                    <p><b>Yellow Box <span></span></b></p>
+                    <li><label for="">background-color:<input class="question_1" type="text" name="" id="" length="10" size="10">;</label></li>
+                    
+                    <li><input class="question_2" type="text" length="10" size="10"><label for="">: 200px;</label></li>
+                    
+                    <li><label for="">width:<input class="question_3" type="text" name="" id="" length="10" size="10">;</label></li> 
+                </ol>
+                <button class="submit_1">Submit</button>
+            </div>
+            <div class="green_box">
+                <ol>
+                    <p><b>Green Box <span></span></b></p>
+                    <li><input class="question_4" type="text" name="" id="" length="10" size="10"><label for="">: green;</label></li>
+                    
+                    <li><label for="">height: </label><input class="question_5" type="text" length="10" size="10">;</li>
+                    
+                    <li><input class="question_6" type="text" name="" id="" length="10" size="10"><label for="">: 200px;</label></li>
+                </ol>
+                <button class="submit_2">Submit</button>
+            </div>
+            <div class="position_box">
+                <ol>
+                    <p><b>Alignments <span></span></b></p>
+                    <li><label for="">justify-content: <input class="question_7" type="text" name="" id="" length="10" size="10">;</label></li>
+                    
+                    <li><input class="question_8" type="text" length="10" size="10"><label for="">: center;</label></li>
+                    
+                    <li><label for="">display: <input class="question_9" type="text" name="" id="" length="10" size="10">;</label></li>
+                </ol>
+                <button class="submit_3">Submit</button>
+            </div>
+        </div>
+    </section>
+    </div>
+    
 
+    
     <script src="game.js"></script>
 </body>
 </html>
