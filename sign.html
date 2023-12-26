@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manahan Arcade</title>
+    <script src="https://kit.fontawesome.com/f710e7073a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--NavBar Section-->
+    <nav>
+
+        <div class="nav_logo_container">
+            <a class="nav_logo" href="#" class="nav-link px-2 text-white" >Dev<span> Dionell </span><i class="fa-solid fa-code"></i></a>
+        </div>
+
+        <div class="container_nav_play">
+        <a class="nav_play" href="index.html">Game</a>
+        <a class="nav_play" href="level.html">Level</a>
+        <a class="nav_play" href="about.html">About</a>
+        </div>
+
+        <div class="nav_register_container">
+            <a class="sign" href="sign.html">Sign In</a>
+            <a class="register" href="sign.html">Register</a>
+        </div>
+    </nav>
+
+    <!--Sign Section-->
+    <div class="sign_hide ">
+    <div class="sign_body_container">
+        <div class="sign_container">
+            <h1>Manahan Arcade</h1>
+        <div class="sign_in">
+            <label for="email"><b>Email</b></label>
+            <input class="email_input" type="email" placeholder="Enter email" name="email" required>
+            <br>
+            <label for="psw"><b>Password</b></label>
+            <input class="password_input" type="password" placeholder="Enter Password" name="psw" required>
+            <br>
+            <label>
+              <input type="checkbox" name="remember"> Remember me
+            </label>
+            <br>
+            <div class="sign_button">
+            <a href="index.html"><button class="log_in_button" lenght="100"><h3>Sign In</h3></button></a>
+            <br>
+            <button class="register_button" lenght="100"><h3>Register</h3></button>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+<!--Register Section-->
+<div class="register_hide hide">
+<div class="register_body_container ">
+    <div class="register_container">
+        <h1>Registration</h1>
+       
+    <div class="register_in">
+        <label for="email"><b>Email</b></label>
+        <input class="email_input" type="email" placeholder="Enter email" name="email" required>
+        <br>
+        <label for="psw"><b>Password</b></label>
+        <input class="password_input" type="password" placeholder="Enter Password" name="psw" required>
+        <br>
+        <label for="psw"><b>Password Confirmation</b></label>
+        <input class="password_input" type="password" placeholder="Re-Enter Password" name="psw" required>
+        <br>
+        <label>
+          <input type="checkbox" name="remember"> I'm not a Robot
+        </label>
+        <br>
+        <a href="sign.html"><button class="other_register_button" lenght="100"><h3>Register and Sign In</h3></button></a>
+        </div>
+    </div>
+</div>  
+</div>
+
+    
+    <script>
+    document.querySelector(".register_button").addEventListener("click",function(){
+        document.querySelector(".register_hide").classList.remove("hide");
+        document.querySelector(".sign_hide").classList.add("hide");
+    });
+    </script>
+</body>
+</html>
